@@ -133,28 +133,26 @@ nav {
 }
 
 /* Hero Section */
+
 .hero-section {
-    background-image: url(/images/hero4.png);
-    height: 90vh;
+    background-image: url(/images/about/banner.png);
+    width: 100%;
+    height: 40vh;
     background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
+    padding: 14px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
-.hero-section h4 {
-    padding-bottom: 15px;
-}
-
-.hero-section h1 {
-    color: #088178;
+.hero-section h2,
+.hero-section p {
+    color: #fff;
 }
 
 .hero-section button {
-    background-image: url(/images/button.png);
+    background-image: url("/images/button.png");
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -165,262 +163,117 @@ nav {
     font-size: 15px;
 }
 
-/* Feature Section */
+/* Contact Details */
 
-.feature-section {
+.contact-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.fea-box {
-    width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
-    border-radius: 4px;
-    margin: 15px 0;
+.contact-details .details {
+    width: 40%;
 }
 
-.fea-box:hover {
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.3);
-}
-
-.fea-box img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.fea-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: #088178;
-    background-color: #fddde4;
-}
-
-.fea-box:nth-child(2) h6 {
-    background-color: #cdebbc;
-}
-
-.fea-box:nth-child(3) h6 {
-    background-color: #d1e8f2;
-}
-
-.fea-box:nth-child(4) h6 {
-    background-color: #cdd4f8;
-}
-
-.fea-box:nth-child(5) h6 {
-    background-color: #f6dbf6;
-}
-
-.fea-box:nth-child(6) h6 {
-    background-color: #fff2e5;
-}
-
-/* Product Section */
-
-.product-section {
-    text-align: center;
-}
-
-.product-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.product {
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
-    transition: 0.2s ease;
-    position: relative;
-}
-
-.product:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.product .description {
-    text-align: start;
-    padding: 10px 0;
-}
-
-.product .description span {
-    color: #606063;
+.contact-details .details span,
+.form-details form span {
     font-size: 12px;
+    color: #465b52;
 }
 
-.product .description h5 {
-    font-size: 14px;
-    padding-top: 7px;
-    color: #1a1a1a;
+.contact-details .details h2,
+.form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
 }
 
-.product .description i {
-    font-size: 12px;
-    color: rgb(243, 181, 25);
-}
-
-.product .description h4 {
-    font-size: 15px;
-    padding-top: 7px;
-    font-weight: 700;
-    color: #088178;
-}
-
-.product .fa-cart-shopping {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: #e8f6ea;
-    color: #088178;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-}
-
-/* Banner */
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(/images/banner/b2.jpg);
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.banner h4 {
-    color: #fff;
+.contact-details .details h3 {
     font-size: 16px;
-}
-
-.banner h2 {
-    color: #fff;
-    font-size: 30px;
-    padding: 10px 0;
-}
-
-.banner h2 span {
-    color: #ef3636;
-}
-
-.banner button:hover {
-    background-color: #088178;
-    color: #fff;
-}
-
-/* sm-banner */
-
-#sm-banner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.banner-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-image: url(/images/banner/b17.jpg);
-    min-width: 540px;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
-
-.banner-box2 {
-    background-image: url(/images/banner/b10.jpg);
-}
-
-.banner-box h4 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-}
-
-.banner-box h2 {
-    font-size: 28px;
-    font-weight: 800;
-    color: #fff;
-}
-
-.banner-box span {
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
     padding-bottom: 15px;
 }
 
-.banner-box:hover button {
-    background-color: #088178;
-    border: 1px solid #088178;
+.contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
 }
 
-.banner3 {
+.contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+.contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+.contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Details */
+
+.form-details {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 80px;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
 }
 
-.banner3-box {
+.form-details form {
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    background-image: url(/images/banner/b7.jpg);
-    min-width: 30%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
+}
+
+.form-details form input,
+.form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
     margin-bottom: 20px;
+    border: 1px solid #cecece;
 }
 
-.banner3-box2 {
-    background-image: url(/images/banner/b4.jpg);
-}
-
-.banner3-box3 {
-    background-image: url(/images/banner/b18.jpg);
-}
-
-.banner3 h2 {
+.form-details form button {
+    background-color: #088178;
     color: #fff;
-    font-size: 22px;
-    font-weight: 900;
 }
 
-.banner3 h3 {
-    color: #ec544e;
-    font-size: 15px;
-    font-weight: 800;
+.contact-team .people {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-team .people img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contact-team .people p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.contact-team .people p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
 }
 
 /* Newsletter */
@@ -597,47 +450,12 @@ footer .copyright {
         display: none;
     }
 
-    .hero-section {
-        height: 70vh;
-        padding: 0 80px;
-        background-position: top 30% right 30%;
+    .form-details {
+        padding: 40px;
     }
 
-    .feature-section {
-        justify-content: center;
-    }
-
-    .feature-section .fea-box {
-        margin: 15px;
-    }
-
-    .product-section .product-container {
-        justify-content: center;
-    }
-
-    .product-section .product {
-        margin: 15px;
-    }
-
-    .banner {
-        height: 20vh;
-    }
-
-    #sm-banner .banner-box {
-        min-width: 100%;
-        height: 30vh;
-    }
-
-    .banner3 {
-        padding: 0 40px;
-    }
-
-    .banner3 .banner3-box {
-        width: 28%;
-    }
-
-    .banner3 h2 {
-        line-height: 34px;
+    .form-details form {
+        width: 50%;
     }
 
     #newsletter .news-form {
@@ -662,42 +480,28 @@ footer .copyright {
         font-size: 32px;
     }
 
-    .hero-section {
-        padding: 0 20px;
-        background-position: 55%;
+    .contact-details {
+        flex-direction: column;
     }
 
-    .feature-section {
-        justify-content: space-between;
+    .contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
-    .feature-section .fea-box {
-        width: 155px;
-        margin: 0 0 15px 0;
-    }
-
-    .product {
+    .contact-details .map {
         width: 100%;
     }
 
-    .banner {
-        height: 40vh;
+    .form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
     }
 
-    #sm-banner .banner-box {
-        height: 40vh;
-    }
-
-    .banner-box2 {
-        margin-top: 20px;
-    }
-
-    .banner3 {
-        padding: 0px 20px;
-    }
-
-    .banner3 .banner3-box {
+    .form-details form {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     #newsletter {
